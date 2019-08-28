@@ -1,40 +1,29 @@
 //
-//  TabShapeView.swift
-//  TestOnCAShapeLayer
+//  CurvedMaskRenderer.swift
+//  AnimationFunByGiwon
 //
-//  Created by GIWON1 on 2018. 3. 19..
-//  Copyright © 2018년 GIWON1. All rights reserved.
+//  Created by SeoGiwon on 27/08/2019.
+//  Copyright © 2019 SeoGiwon. All rights reserved.
 //
 
 import UIKit
 
-class TabShapeView: UIView {
+class CurvedMaskRenderer: NSObject {
 
     enum CurveDirection {
         case left, right, top, bottom
     }
     
-    var curveDirection = CurveDirection.top
-    
-    override func draw(_ rect: CGRect) {
+    func redraw(for shapeLayer: inout CAShapeLayer, curveDirection: CurveDirection, curveControlValue: CGFloat) {
         
+        shapeLayer.path = curvePathAtTop(frame: shapeLayer.bounds, at: curveControlValue).cgPath
         
-        let curvePath = curvePathAtTop(frame: self.bounds, at:0.5)
+        shapeLayer.fillColor = UIColor.red.cgColor
+        shapeLayer.strokeColor = UIColor.green.cgColor
         
-        if let context = UIGraphicsGetCurrentContext() {
-            draw(curvePath, frame: rect, at: .left, with: context)
-        }
-        
-    }
-    
-    private func draw(_ path: UIBezierPath, frame: CGRect, at direction: CurveDirection, with context: CGContext) {
-        
-        context.saveGState()
-        
-        // rotate context
+        // rotate shape layer
         var numOfRotation = 0
-        switch direction {
-            
+        switch curveDirection {
         case .top:
             numOfRotation = 0
         case .right:
@@ -45,22 +34,10 @@ class TabShapeView: UIView {
             numOfRotation = 3
         }
         
-        for _ in 0..<numOfRotation {
-            context.translateBy(x: frame.midX, y: frame.midY)
-            context.rotate(by: CGFloat.pi/2.0)
-            context.translateBy(x: -frame.midX, y: -frame.midY)
-        }
+        let rotationAngle = CGFloat.pi/2.0 * CGFloat(numOfRotation)
         
-        // add path
-        context.addPath(path.cgPath)
-        
-        context.setFillColor(UIColor.red.cgColor)
-        context.setStrokeColor(UIColor.green.cgColor)
-        
-        // draw path
-        context.drawPath(using: .fillStroke)
-        
-        context.restoreGState()
+        shapeLayer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        shapeLayer.transform = CATransform3DRotate(CATransform3DIdentity, rotationAngle, 0, 0, 1)
     }
     
     private func curvePathAtTop(frame: CGRect, at normalizedPoint: CGFloat) -> UIBezierPath {
@@ -88,5 +65,4 @@ class TabShapeView: UIView {
         
         return curvePath
     }
-    
 }
