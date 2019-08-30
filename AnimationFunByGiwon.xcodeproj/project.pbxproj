@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE433FA82316C95100BA2336 /* GHeadTailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FA72316C95100BA2336 /* GHeadTailButton.swift */; };
+		EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */; };
+		EE433FAD2316CAC800BA2336 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAB2316CAC800BA2336 /* pause.png */; };
+		EE433FAE2316CAC800BA2336 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAC2316CAC800BA2336 /* play.png */; };
 		EE4E8F1B2314050B00D95688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E8F1A2314050B00D95688 /* AppDelegate.swift */; };
 		EE4E8F1D2314050B00D95688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E8F1C2314050B00D95688 /* ViewController.swift */; };
 		EE4E8F202314050B00D95688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4E8F1E2314050B00D95688 /* Main.storyboard */; };
@@ -14,9 +18,16 @@
 		EE4E8F252314050D00D95688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4E8F232314050D00D95688 /* LaunchScreen.storyboard */; };
 		EE4E8F2D2314062500D95688 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E8F2C2314062400D95688 /* TargetView.swift */; };
 		EE6E5DDA2315233C0049A58D /* CurvedMaskRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DD92315233C0049A58D /* CurvedMaskRenderer.swift */; };
+		EE6E5DDE23163D550049A58D /* RubberBandEffectTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */; };
+		EE6E5DE023163E260049A58D /* PlainViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DDF23163E260049A58D /* PlainViewA.swift */; };
+		EE6E5DE22316435D0049A58D /* RubberBandBehaviorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE433FA72316C95100BA2336 /* GHeadTailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHeadTailButton.swift; sourceTree = "<group>"; };
+		EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiwonButtonTestingViewController.swift; sourceTree = "<group>"; };
+		EE433FAB2316CAC800BA2336 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		EE433FAC2316CAC800BA2336 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		EE4E8F172314050A00D95688 /* AnimationFunByGiwon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationFunByGiwon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4E8F1A2314050B00D95688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE4E8F1C2314050B00D95688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +37,9 @@
 		EE4E8F262314050D00D95688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE4E8F2C2314062400D95688 /* TargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
 		EE6E5DD92315233C0049A58D /* CurvedMaskRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedMaskRenderer.swift; sourceTree = "<group>"; };
+		EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubberBandEffectTestingViewController.swift; sourceTree = "<group>"; };
+		EE6E5DDF23163E260049A58D /* PlainViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainViewA.swift; sourceTree = "<group>"; };
+		EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubberBandBehaviorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE433FA62316C8D600BA2336 /* GiwonButtonTesting */ = {
+			isa = PBXGroup;
+			children = (
+				EE433FA72316C95100BA2336 /* GHeadTailButton.swift */,
+				EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */,
+				EE433FAB2316CAC800BA2336 /* pause.png */,
+				EE433FAC2316CAC800BA2336 /* play.png */,
+			);
+			path = GiwonButtonTesting;
+			sourceTree = "<group>";
+		};
 		EE4E8F0E2314050A00D95688 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +83,9 @@
 		EE4E8F192314050B00D95688 /* AnimationFunByGiwon */ = {
 			isa = PBXGroup;
 			children = (
-				EE6E5DDC23163BC40049A58D /* New Group1 */,
-				EE6E5DDB23163BAC0049A58D /* New Group */,
+				EE433FA62316C8D600BA2336 /* GiwonButtonTesting */,
+				EE6E5DDB23163BAC0049A58D /* CurvedShapeTesting */,
+				EE6E5DDC23163BC40049A58D /* RubberBandEffect */,
 				EE4E8F1A2314050B00D95688 /* AppDelegate.swift */,
 				EE4E8F1E2314050B00D95688 /* Main.storyboard */,
 				EE4E8F212314050D00D95688 /* Assets.xcassets */,
@@ -69,21 +95,24 @@
 			path = AnimationFunByGiwon;
 			sourceTree = "<group>";
 		};
-		EE6E5DDB23163BAC0049A58D /* New Group */ = {
+		EE6E5DDB23163BAC0049A58D /* CurvedShapeTesting */ = {
 			isa = PBXGroup;
 			children = (
 				EE4E8F1C2314050B00D95688 /* ViewController.swift */,
 				EE4E8F2C2314062400D95688 /* TargetView.swift */,
 				EE6E5DD92315233C0049A58D /* CurvedMaskRenderer.swift */,
 			);
-			path = "New Group";
+			path = CurvedShapeTesting;
 			sourceTree = "<group>";
 		};
-		EE6E5DDC23163BC40049A58D /* New Group1 */ = {
+		EE6E5DDC23163BC40049A58D /* RubberBandEffect */ = {
 			isa = PBXGroup;
 			children = (
+				EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */,
+				EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */,
+				EE6E5DDF23163E260049A58D /* PlainViewA.swift */,
 			);
-			path = "New Group1";
+			path = RubberBandEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4E8F252314050D00D95688 /* LaunchScreen.storyboard in Resources */,
+				EE433FAE2316CAC800BA2336 /* play.png in Resources */,
 				EE4E8F222314050D00D95688 /* Assets.xcassets in Resources */,
+				EE433FAD2316CAC800BA2336 /* pause.png in Resources */,
 				EE4E8F202314050B00D95688 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,10 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE6E5DE22316435D0049A58D /* RubberBandBehaviorHelper.swift in Sources */,
 				EE4E8F1D2314050B00D95688 /* ViewController.swift in Sources */,
 				EE4E8F2D2314062500D95688 /* TargetView.swift in Sources */,
+				EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */,
+				EE6E5DDE23163D550049A58D /* RubberBandEffectTestingViewController.swift in Sources */,
+				EE6E5DE023163E260049A58D /* PlainViewA.swift in Sources */,
 				EE4E8F1B2314050B00D95688 /* AppDelegate.swift in Sources */,
 				EE6E5DDA2315233C0049A58D /* CurvedMaskRenderer.swift in Sources */,
+				EE433FA82316C95100BA2336 /* GHeadTailButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

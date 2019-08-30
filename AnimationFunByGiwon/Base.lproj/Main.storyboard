@@ -23,7 +23,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205.7971014492755" y="67.633928571428569"/>
+            <point key="canvasLocation" x="2483" y="60"/>
+        </scene>
+        <!--Giwon Button Testing View Controller-->
+        <scene sceneID="izQ-2s-0PD">
+            <objects>
+                <viewController id="Uvk-iG-QcV" customClass="GiwonButtonTestingViewController" customModule="AnimationFunByGiwon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ubo-ss-qag">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nZ-bW-NXm" customClass="GiwonButton" customModule="AnimationFunByGiwon" customModuleProvider="target">
+                                <rect key="frame" x="20" y="104" width="38" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="headButtonImage" value="play.png"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="tailButtonImage" value="pause"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4bd-lB-qCM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sE-NS-gLl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="43.526785714285715"/>
+        </scene>
+        <!--Rubber Band Effect Testing View Controller-->
+        <scene sceneID="a4H-7O-ScF">
+            <objects>
+                <viewController id="VYy-28-mCQ" customClass="RubberBandEffectTestingViewController" customModule="AnimationFunByGiwon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J72-Yn-ncw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-wy-X0f" customClass="PlainViewA" customModule="AnimationFunByGiwon" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="782" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="PNB-hu-FGy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ajb-lz-Kzd" firstAttribute="trailing" secondItem="lqK-wy-X0f" secondAttribute="trailing" id="e56-gO-R3m"/>
+                            <constraint firstItem="lqK-wy-X0f" firstAttribute="leading" secondItem="Ajb-lz-Kzd" secondAttribute="leading" id="xJJ-gG-G12"/>
+                            <constraint firstItem="lqK-wy-X0f" firstAttribute="bottom" secondItem="Ajb-lz-Kzd" secondAttribute="bottom" id="zzf-g1-SIZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ajb-lz-Kzd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7p-FZ-AVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="798"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="hWV-qX-hy9">
@@ -72,6 +126,29 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="VYy-28-mCQ" kind="show" id="7zx-gV-uxT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="iLU-VE-CKD" style="IBUITableViewCellStyleDefault" id="HT3-oE-gXw">
+                                        <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HT3-oE-gXw" id="zsl-yF-uYD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Giwon Play Button Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iLU-VE-CKD">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Uvk-iG-QcV" kind="show" id="j9q-bD-nnc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -106,4 +183,8 @@
             <point key="canvasLocation" x="-678.26086956521749" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pause" width="16" height="16"/>
+        <image name="play.png" width="512" height="512"/>
+    </resources>
 </document>
