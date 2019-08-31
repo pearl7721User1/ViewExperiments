@@ -8,38 +8,45 @@
 
 import UIKit
 
+protocol RubberBandBehaviorHelperDelegate {
+    func valueUpdated(sender: Any, x:CGFloat, originalHeight:CGFloat, updatedHeight:CGFloat)
+    func bounceBack(sender: Any, to constant:CGFloat)
+}
+
+
 class RubberBandBehaviorHelper: NSObject {
     
-    var targetConstraint: NSLayoutConstraint?
-    var targetView: UIView?
-    var constraintOriginalConstant: CGFloat = 0.0
-    var rubberConstant: CGFloat = 100
+    var delegate: RubberBandBehaviorHelperDelegate?
+    var originalViewHeight: CGFloat
+    private let rubberConstant: CGFloat = 100
+    
+    init(originalViewHeight: CGFloat) {
+        self.originalViewHeight = originalViewHeight
+    }
     
     @IBAction func viewDragged(sender: UIPanGestureRecognizer) {
         let yTranslation = sender.translation(in: sender.view).y
+        let xLocation = sender.location(in: sender.view).x
+        
         
         switch sender.state {
         case .began, .changed:
             
-            let logScale = constraintOriginalConstant + rubberConstant * log10(abs(yTranslation/rubberConstant) + 1)
-            print("log:\(logScale)")
+            guard yTranslation < 0 else {
+                return
+            }
             
-            targetConstraint?.constant = logScale
+            let rubberBandYTranslation = originalViewHeight + rubberConstant * log10(-yTranslation/rubberConstant + 1)
+
+            delegate?.valueUpdated(sender: self, x: xLocation, originalHeight: originalViewHeight, updatedHeight: rubberBandYTranslation)
             
         default:
-            animateViewBackToLimit()
+            
+            delegate?.bounceBack(sender: self, to: originalViewHeight)
+            
             break
         }
         
     }
     
-    func animateViewBackToLimit() {
-        
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 10, options: UIView.AnimationOptions.allowUserInteraction, animations: { () -> Void in
-            
-            self.targetConstraint?.constant = self.constraintOriginalConstant
-            self.targetView?.layoutIfNeeded()
-            
-        }, completion: nil)
-    }
 }

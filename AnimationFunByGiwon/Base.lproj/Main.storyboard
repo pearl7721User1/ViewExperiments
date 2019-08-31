@@ -57,27 +57,55 @@
                     <view key="view" contentMode="scaleToFill" id="J72-Yn-ncw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-wy-X0f" customClass="PlainViewA" customModule="AnimationFunByGiwon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="782" width="414" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="PNB-hu-FGy"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Ajb-lz-Kzd" firstAttribute="trailing" secondItem="lqK-wy-X0f" secondAttribute="trailing" id="e56-gO-R3m"/>
-                            <constraint firstItem="lqK-wy-X0f" firstAttribute="leading" secondItem="Ajb-lz-Kzd" secondAttribute="leading" id="xJJ-gG-G12"/>
-                            <constraint firstItem="lqK-wy-X0f" firstAttribute="bottom" secondItem="Ajb-lz-Kzd" secondAttribute="bottom" id="zzf-g1-SIZ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ajb-lz-Kzd"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7p-FZ-AVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1206" y="798"/>
+        </scene>
+        <!--Cat Image View Controller-->
+        <scene sceneID="Och-xj-jH4">
+            <objects>
+                <viewController storyboardIdentifier="CatImageViewController" id="jci-wM-FFh" customClass="CatImageViewController" customModule="AnimationFunByGiwon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VjT-Jy-gLt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="cnT-mn-cG4">
+                                <rect key="frame" x="0.0" y="80" width="414" height="816"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhW-CB-EO4" customClass="PullHandleView" customModule="AnimationFunByGiwon" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="xFx-rZ-vge"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="xFx-rZ-vge" id="cFA-LD-CiM"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cnT-mn-cG4" firstAttribute="leading" secondItem="nWt-dp-zvF" secondAttribute="leading" id="1qg-jm-6Au"/>
+                            <constraint firstItem="cnT-mn-cG4" firstAttribute="top" secondItem="PhW-CB-EO4" secondAttribute="bottom" id="2xz-wB-hl5"/>
+                            <constraint firstItem="PhW-CB-EO4" firstAttribute="leading" secondItem="nWt-dp-zvF" secondAttribute="leading" id="Hix-vS-CJD"/>
+                            <constraint firstItem="cnT-mn-cG4" firstAttribute="top" secondItem="VjT-Jy-gLt" secondAttribute="top" constant="80" id="M02-oH-8gD"/>
+                            <constraint firstItem="nWt-dp-zvF" firstAttribute="trailing" secondItem="cnT-mn-cG4" secondAttribute="trailing" id="Xzo-Ww-CD0"/>
+                            <constraint firstAttribute="bottom" secondItem="cnT-mn-cG4" secondAttribute="bottom" id="ciQ-lZ-YST"/>
+                            <constraint firstItem="PhW-CB-EO4" firstAttribute="trailing" secondItem="nWt-dp-zvF" secondAttribute="trailing" id="mNM-0e-d9D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nWt-dp-zvF"/>
+                    </view>
+                    <connections>
+                        <outlet property="pullHandleView" destination="PhW-CB-EO4" id="sKd-0q-jBD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0R-WC-VFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956.521739130435" y="797.54464285714278"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="hWV-qX-hy9">
@@ -184,6 +212,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cat.jpeg" width="960" height="930"/>
         <image name="pause" width="16" height="16"/>
         <image name="play.png" width="512" height="512"/>
     </resources>

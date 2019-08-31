@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurvedMaskRenderer: NSObject {
+class CurvedMaskRendererForTesting: NSObject {
 
     enum CurveDirection {
         case left, right, top, bottom

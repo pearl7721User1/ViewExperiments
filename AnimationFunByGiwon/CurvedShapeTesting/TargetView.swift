@@ -11,9 +11,9 @@ import UIKit
 class TargetView: UIView {
 
     private var shapeLayer: CAShapeLayer = CAShapeLayer()
-    private let renderer = CurvedMaskRenderer()
+    private let renderer = CurvedMaskRendererForTesting()
     
-    var curveDirection = CurvedMaskRenderer.CurveDirection.top {
+    var curveDirection = CurvedMaskRendererForTesting.CurveDirection.top {
         didSet {
             redrawShapeLayer()
         }
@@ -27,7 +27,7 @@ class TargetView: UIView {
     
     override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
-        self.layer.addSublayer(shapeLayer)
+        self.layer.mask = shapeLayer
     }
     
     override func draw(_ rect: CGRect) {        
@@ -42,6 +42,8 @@ class TargetView: UIView {
     
     private func redrawShapeLayer() {
         renderer.redraw(for: &shapeLayer, curveDirection: curveDirection, curveControlValue: curveControlValue)
+        
+        
     }
     
 }
