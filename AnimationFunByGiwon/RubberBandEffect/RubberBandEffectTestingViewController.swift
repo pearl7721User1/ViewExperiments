@@ -10,10 +10,10 @@ import UIKit
 
 class RubberBandEffectTestingViewController: UIViewController {
 
-    var catImageViewController: CatImageViewController
+    var pullSubjectViewController: PullSubjectViewController
     
     required init?(coder aDecoder: NSCoder) {
-        catImageViewController = CatImageViewController.newInstance()
+        pullSubjectViewController = PullSubjectViewController.newInstance()
         super.init(coder: aDecoder)
     }
     
@@ -21,9 +21,8 @@ class RubberBandEffectTestingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.addChild(catImageViewController)
-        self.view.addSubview(catImageViewController.view)
+        self.addChild(pullSubjectViewController)
+        self.view.addSubview(pullSubjectViewController.view)
         
     }
     
@@ -32,6 +31,6 @@ class RubberBandEffectTestingViewController: UIViewController {
         
         var rect = self.view.bounds
         rect.origin = CGPoint(x:0, y:self.view.bounds.maxY - 80)
-        catImageViewController.view.frame = rect
+        pullSubjectViewController.view.frame = rect
     }
 }

@@ -11,8 +11,7 @@
 		EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */; };
 		EE433FAD2316CAC800BA2336 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAB2316CAC800BA2336 /* pause.png */; };
 		EE433FAE2316CAC800BA2336 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAC2316CAC800BA2336 /* play.png */; };
-		EE433FB02318F63300BA2336 /* cat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAF2318F63300BA2336 /* cat.jpeg */; };
-		EE433FB32318F6A500BA2336 /* CatImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB22318F6A500BA2336 /* CatImageViewController.swift */; };
+		EE433FB32318F6A500BA2336 /* PullSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB22318F6A500BA2336 /* PullSubjectViewController.swift */; };
 		EE433FB52319195900BA2336 /* CurveShapeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB42319195900BA2336 /* CurveShapeController.swift */; };
 		EE433FB7231959C900BA2336 /* CurvedMaskRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB6231959C900BA2336 /* CurvedMaskRenderer.swift */; };
 		EE4E8F1B2314050B00D95688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E8F1A2314050B00D95688 /* AppDelegate.swift */; };
@@ -32,8 +31,7 @@
 		EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiwonButtonTestingViewController.swift; sourceTree = "<group>"; };
 		EE433FAB2316CAC800BA2336 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		EE433FAC2316CAC800BA2336 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		EE433FAF2318F63300BA2336 /* cat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpeg; sourceTree = "<group>"; };
-		EE433FB22318F6A500BA2336 /* CatImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageViewController.swift; sourceTree = "<group>"; };
+		EE433FB22318F6A500BA2336 /* PullSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullSubjectViewController.swift; sourceTree = "<group>"; };
 		EE433FB42319195900BA2336 /* CurveShapeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveShapeController.swift; sourceTree = "<group>"; };
 		EE433FB6231959C900BA2336 /* CurvedMaskRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedMaskRenderer.swift; sourceTree = "<group>"; };
 		EE4E8F172314050A00D95688 /* AnimationFunByGiwon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationFunByGiwon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +73,7 @@
 		EE433FB12318F67F00BA2336 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				EE433FB22318F6A500BA2336 /* CatImageViewController.swift */,
+				EE433FB22318F6A500BA2336 /* PullSubjectViewController.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -130,7 +128,6 @@
 				EE6E5DDF23163E260049A58D /* PullHandleView.swift */,
 				EE433FB6231959C900BA2336 /* CurvedMaskRenderer.swift */,
 				EE433FB42319195900BA2336 /* CurveShapeController.swift */,
-				EE433FAF2318F63300BA2336 /* cat.jpeg */,
 			);
 			path = RubberBandEffect;
 			sourceTree = "<group>";
@@ -196,7 +193,6 @@
 				EE4E8F252314050D00D95688 /* LaunchScreen.storyboard in Resources */,
 				EE433FAE2316CAC800BA2336 /* play.png in Resources */,
 				EE4E8F222314050D00D95688 /* Assets.xcassets in Resources */,
-				EE433FB02318F63300BA2336 /* cat.jpeg in Resources */,
 				EE433FAD2316CAC800BA2336 /* pause.png in Resources */,
 				EE4E8F202314050B00D95688 /* Main.storyboard in Resources */,
 			);
@@ -214,7 +210,7 @@
 				EE4E8F1D2314050B00D95688 /* ViewController.swift in Sources */,
 				EE433FB7231959C900BA2336 /* CurvedMaskRenderer.swift in Sources */,
 				EE4E8F2D2314062500D95688 /* TargetView.swift in Sources */,
-				EE433FB32318F6A500BA2336 /* CatImageViewController.swift in Sources */,
+				EE433FB32318F6A500BA2336 /* PullSubjectViewController.swift in Sources */,
 				EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */,
 				EE6E5DDE23163D550049A58D /* RubberBandEffectTestingViewController.swift in Sources */,
 				EE6E5DE023163E260049A58D /* PullHandleView.swift in Sources */,

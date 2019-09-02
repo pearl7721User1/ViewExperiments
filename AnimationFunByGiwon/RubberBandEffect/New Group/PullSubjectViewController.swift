@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CatImageViewController: UIViewController {
+class PullSubjectViewController: UIViewController {
 
     @IBOutlet weak var pullHandleView: PullHandleView!
 
@@ -21,9 +21,9 @@ class CatImageViewController: UIViewController {
     }
 
 
-    static func newInstance() -> CatImageViewController {
+    static func newInstance() -> PullSubjectViewController {
         
-        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CatImageViewController") as? CatImageViewController else {
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PullSubjectViewController") as? PullSubjectViewController else {
             fatalError()
         }
         

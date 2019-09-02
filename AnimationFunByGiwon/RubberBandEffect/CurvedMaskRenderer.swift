@@ -10,13 +10,15 @@ import UIKit
 
 class CurvedMaskRenderer: NSObject {
     
+    var lastPath: UIBezierPath?
+    
     enum CurveDirection {
         case left, right, top, bottom
     }
     
-    func redraw(for shapeLayer: inout CAShapeLayer, curveDirection: CurveDirection = .top, curveControlValue: CGFloat = 0.5, curveHeight: CGFloat = 0) {
+    func redraw(for shapeLayer: inout CAShapeLayer, curveDirection: CurveDirection = .top, curveControlValue: CGFloat = 0.5, curveMagnitude: CGFloat = 0) {
         
-        shapeLayer.path = curvePathAtTop(frame: shapeLayer.bounds, curveControlValue:curveControlValue, curveHeight:curveHeight).cgPath
+        shapeLayer.path = curvePathAtTop(frame: shapeLayer.bounds, curveControlValue:curveControlValue, curveMagnitude:curveMagnitude).cgPath
         
         shapeLayer.fillColor = UIColor.red.cgColor
         shapeLayer.strokeColor = UIColor.green.cgColor
@@ -40,11 +42,11 @@ class CurvedMaskRenderer: NSObject {
         shapeLayer.transform = CATransform3DRotate(CATransform3DIdentity, rotationAngle, 0, 0, 1)
     }
     
-    private func curvePathAtTop(frame: CGRect, curveControlValue: CGFloat, curveHeight:CGFloat) -> UIBezierPath {
+    func curvePathAtTop(frame: CGRect, curveControlValue: CGFloat, curveMagnitude:CGFloat) -> UIBezierPath {
         
         let curvePath = UIBezierPath()
-        let firstPoint = CGPoint(x: 0, y: curveHeight)
-        let endPoint = CGPoint(x: frame.maxX, y: curveHeight)
+        let firstPoint = CGPoint(x: 0, y: curveMagnitude)
+        let endPoint = CGPoint(x: frame.maxX, y: curveMagnitude)
         
         curvePath.move(to: firstPoint)
         
@@ -62,6 +64,8 @@ class CurvedMaskRenderer: NSObject {
         curvePath.addLine(to: firstPoint)
         
         curvePath.close()
+        
+        lastPath = curvePath
         
         return curvePath
     }

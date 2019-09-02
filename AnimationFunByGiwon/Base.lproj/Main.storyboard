@@ -65,36 +65,47 @@
             </objects>
             <point key="canvasLocation" x="1206" y="798"/>
         </scene>
-        <!--Cat Image View Controller-->
+        <!--Pull Subject View Controller-->
         <scene sceneID="Och-xj-jH4">
             <objects>
-                <viewController storyboardIdentifier="CatImageViewController" id="jci-wM-FFh" customClass="CatImageViewController" customModule="AnimationFunByGiwon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PullSubjectViewController" id="jci-wM-FFh" customClass="PullSubjectViewController" customModule="AnimationFunByGiwon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VjT-Jy-gLt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="cnT-mn-cG4">
-                                <rect key="frame" x="0.0" y="80" width="414" height="816"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhW-CB-EO4" customClass="PullHandleView" customModule="AnimationFunByGiwon" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull me up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaD-py-KuT">
+                                        <rect key="frame" x="162" y="28" width="90" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="qaD-py-KuT" firstAttribute="centerY" secondItem="PhW-CB-EO4" secondAttribute="centerY" id="LuI-is-753"/>
+                                    <constraint firstItem="qaD-py-KuT" firstAttribute="centerX" secondItem="PhW-CB-EO4" secondAttribute="centerX" id="ZGL-ws-EOV"/>
                                     <constraint firstAttribute="height" constant="80" id="xFx-rZ-vge"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="heightConstraint" destination="xFx-rZ-vge" id="cFA-LD-CiM"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gov-hs-Ai3">
+                                <rect key="frame" x="0.0" y="80" width="414" height="782"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cnT-mn-cG4" firstAttribute="leading" secondItem="nWt-dp-zvF" secondAttribute="leading" id="1qg-jm-6Au"/>
-                            <constraint firstItem="cnT-mn-cG4" firstAttribute="top" secondItem="PhW-CB-EO4" secondAttribute="bottom" id="2xz-wB-hl5"/>
+                            <constraint firstItem="gov-hs-Ai3" firstAttribute="leading" secondItem="nWt-dp-zvF" secondAttribute="leading" id="0ms-fu-1PM"/>
+                            <constraint firstItem="gov-hs-Ai3" firstAttribute="trailing" secondItem="nWt-dp-zvF" secondAttribute="trailing" id="DoE-aK-wMl"/>
+                            <constraint firstItem="nWt-dp-zvF" firstAttribute="bottom" secondItem="gov-hs-Ai3" secondAttribute="bottom" id="F4T-Mo-7GE"/>
                             <constraint firstItem="PhW-CB-EO4" firstAttribute="leading" secondItem="nWt-dp-zvF" secondAttribute="leading" id="Hix-vS-CJD"/>
-                            <constraint firstItem="cnT-mn-cG4" firstAttribute="top" secondItem="VjT-Jy-gLt" secondAttribute="top" constant="80" id="M02-oH-8gD"/>
-                            <constraint firstItem="nWt-dp-zvF" firstAttribute="trailing" secondItem="cnT-mn-cG4" secondAttribute="trailing" id="Xzo-Ww-CD0"/>
-                            <constraint firstAttribute="bottom" secondItem="cnT-mn-cG4" secondAttribute="bottom" id="ciQ-lZ-YST"/>
+                            <constraint firstItem="gov-hs-Ai3" firstAttribute="top" secondItem="VjT-Jy-gLt" secondAttribute="top" constant="80" id="LFZ-jm-H8D"/>
+                            <constraint firstItem="gov-hs-Ai3" firstAttribute="top" secondItem="PhW-CB-EO4" secondAttribute="bottom" id="eal-02-ePz"/>
                             <constraint firstItem="PhW-CB-EO4" firstAttribute="trailing" secondItem="nWt-dp-zvF" secondAttribute="trailing" id="mNM-0e-d9D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nWt-dp-zvF"/>
@@ -212,7 +223,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cat.jpeg" width="960" height="930"/>
         <image name="pause" width="16" height="16"/>
         <image name="play.png" width="512" height="512"/>
     </resources>

@@ -38,23 +38,27 @@ class CurveShapeController: NSObject, RubberBandBehaviorHelperDelegate {
         targetConstraint.constant = updatedHeight
         
         // update mask
-        curveRenderer.redraw(for: &maskLayer, curveDirection: .top, curveControlValue: x, curveHeight: updatedHeight-originalHeight)
+        curveRenderer.redraw(for: &maskLayer, curveDirection: .top, curveControlValue: x, curveMagnitude: updatedHeight-originalHeight)
     }
     
     func bounceBack(sender: Any, to constant: CGFloat) {
         
-        var curveControlValueTemp: CGFloat = 0.5
-        var curveHeightTemp: CGFloat = 0
+        self.targetConstraint.constant = constant
         
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 10, options: UIView.AnimationOptions.allowUserInteraction, animations: { () -> Void in
+        if let lastPath = curveRenderer.lastPath {
             
-            self.targetConstraint.constant = constant
+            let animation1 = CASpringAnimation(keyPath: "path")
+            animation1.damping = 0.8
+            animation1.initialVelocity = 0.8
+            animation1.duration = 3
+            animation1.fromValue = lastPath.cgPath
+            animation1.toValue = curveRenderer.curvePathAtTop(frame: maskLayer.bounds, curveControlValue: 0.5, curveMagnitude: 0).cgPath
             
-            // update mask
-            self.curveRenderer.redraw(for: &self.maskLayer, curveControlValue: 0.5, curveHeight: 0)
+            maskLayer.add(animation1, forKey: "path")
             
-            self.targetView?.layoutIfNeeded()
-            
-        }, completion: nil)
+        }
+        
+        
+
     }
 }
