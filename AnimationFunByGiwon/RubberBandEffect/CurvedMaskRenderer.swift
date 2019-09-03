@@ -51,7 +51,7 @@ class CurvedMaskRenderer: NSObject {
         curvePath.move(to: firstPoint)
         
         // add curve
-        let controlPoint = CGPoint(x:curveControlValue, y:0)
+        let controlPoint = CGPoint(x:frame.width * curveControlValue, y:0)
         curvePath.addQuadCurve(to: endPoint, controlPoint: controlPoint)
         
         // add line to right bottom

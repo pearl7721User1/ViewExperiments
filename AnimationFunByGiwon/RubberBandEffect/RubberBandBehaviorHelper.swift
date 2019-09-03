@@ -9,24 +9,32 @@
 import UIKit
 
 protocol RubberBandBehaviorHelperDelegate {
-    func valueUpdated(sender: Any, x:CGFloat, originalHeight:CGFloat, updatedHeight:CGFloat)
-    func bounceBack(sender: Any, to constant:CGFloat)
+    func constantUpdated(to: CGFloat, curveMagnitude:CGFloat, curveControl:CGFloat, sender: Any)
+    func bounceBack(to constant:CGFloat, sender: Any)
 }
 
 
 class RubberBandBehaviorHelper: NSObject {
     
     var delegate: RubberBandBehaviorHelperDelegate?
-    var originalViewHeight: CGFloat
+    var pulledViewHeight: CGFloat
     private let rubberConstant: CGFloat = 100
     
     init(originalViewHeight: CGFloat) {
-        self.originalViewHeight = originalViewHeight
+        self.pulledViewHeight = originalViewHeight
     }
     
     @IBAction func viewDragged(sender: UIPanGestureRecognizer) {
         let yTranslation = sender.translation(in: sender.view).y
         let xLocation = sender.location(in: sender.view).x
+        
+        var normalizedXLocation: CGFloat {
+            
+            if let bounds = sender.view?.bounds {
+                return xLocation / bounds.width
+            }
+            return 0.5
+        }
         
         
         switch sender.state {
@@ -36,13 +44,14 @@ class RubberBandBehaviorHelper: NSObject {
                 return
             }
             
-            let rubberBandYTranslation = originalViewHeight + rubberConstant * log10(-yTranslation/rubberConstant + 1)
-
-            delegate?.valueUpdated(sender: self, x: xLocation, originalHeight: originalViewHeight, updatedHeight: rubberBandYTranslation)
+            let rubberBandYTranslation = pulledViewHeight + rubberConstant * log10(-yTranslation/rubberConstant + 1)
+            
+            delegate?.constantUpdated(to: rubberBandYTranslation, curveMagnitude: rubberBandYTranslation - pulledViewHeight, curveControl: normalizedXLocation, sender: self)
+            
             
         default:
             
-            delegate?.bounceBack(sender: self, to: originalViewHeight)
+            delegate?.bounceBack(to: pulledViewHeight, sender: self)
             
             break
         }

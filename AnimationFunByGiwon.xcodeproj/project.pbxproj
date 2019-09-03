@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE30C55F231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE30C55E231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift */; };
+		EE30C588231E34B600B2CE02 /* GiwonColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE30C587231E34B600B2CE02 /* GiwonColorPalette.swift */; };
 		EE433FA82316C95100BA2336 /* GHeadTailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FA72316C95100BA2336 /* GHeadTailButton.swift */; };
 		EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */; };
 		EE433FAD2316CAC800BA2336 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAB2316CAC800BA2336 /* pause.png */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE30C55E231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogousColorSchemeViewController.swift; sourceTree = "<group>"; };
+		EE30C587231E34B600B2CE02 /* GiwonColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiwonColorPalette.swift; sourceTree = "<group>"; };
 		EE433FA72316C95100BA2336 /* GHeadTailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHeadTailButton.swift; sourceTree = "<group>"; };
 		EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiwonButtonTestingViewController.swift; sourceTree = "<group>"; };
 		EE433FAB2316CAC800BA2336 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE30C55D231CBC6000B2CE02 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				EE30C55E231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift */,
+				EE30C587231E34B600B2CE02 /* GiwonColorPalette.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		EE433FA62316C8D600BA2336 /* GiwonButtonTesting */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		EE4E8F192314050B00D95688 /* AnimationFunByGiwon */ = {
 			isa = PBXGroup;
 			children = (
+				EE30C55D231CBC6000B2CE02 /* New Group */,
 				EE433FA62316C8D600BA2336 /* GiwonButtonTesting */,
 				EE6E5DDB23163BAC0049A58D /* CurvedShapeTesting */,
 				EE6E5DDC23163BC40049A58D /* RubberBandEffect */,
@@ -207,7 +221,9 @@
 			files = (
 				EE433FB52319195900BA2336 /* CurveShapeController.swift in Sources */,
 				EE6E5DE22316435D0049A58D /* RubberBandBehaviorHelper.swift in Sources */,
+				EE30C588231E34B600B2CE02 /* GiwonColorPalette.swift in Sources */,
 				EE4E8F1D2314050B00D95688 /* ViewController.swift in Sources */,
+				EE30C55F231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift in Sources */,
 				EE433FB7231959C900BA2336 /* CurvedMaskRenderer.swift in Sources */,
 				EE4E8F2D2314062500D95688 /* TargetView.swift in Sources */,
 				EE433FB32318F6A500BA2336 /* PullSubjectViewController.swift in Sources */,

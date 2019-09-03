@@ -32,16 +32,16 @@ class CurveShapeController: NSObject, RubberBandBehaviorHelperDelegate {
     private let curveRenderer = CurvedMaskRenderer()
     private var maskLayer: CAShapeLayer = CAShapeLayer()
     
-    func valueUpdated(sender: Any, x: CGFloat, originalHeight: CGFloat, updatedHeight: CGFloat) {
+    func constantUpdated(to: CGFloat, curveMagnitude: CGFloat, curveControl: CGFloat, sender: Any) {
         
         // change view height
-        targetConstraint.constant = updatedHeight
+        targetConstraint.constant = to
         
         // update mask
-        curveRenderer.redraw(for: &maskLayer, curveDirection: .top, curveControlValue: x, curveMagnitude: updatedHeight-originalHeight)
+        curveRenderer.redraw(for: &maskLayer, curveDirection: .top, curveControlValue: curveControl, curveMagnitude: curveMagnitude)
     }
     
-    func bounceBack(sender: Any, to constant: CGFloat) {
+    func bounceBack(to constant: CGFloat, sender: Any) {
         
         self.targetConstraint.constant = constant
         
@@ -50,15 +50,14 @@ class CurveShapeController: NSObject, RubberBandBehaviorHelperDelegate {
             let animation1 = CASpringAnimation(keyPath: "path")
             animation1.damping = 0.8
             animation1.initialVelocity = 0.8
-            animation1.duration = 3
+            animation1.duration = 0.3
             animation1.fromValue = lastPath.cgPath
             animation1.toValue = curveRenderer.curvePathAtTop(frame: maskLayer.bounds, curveControlValue: 0.5, curveMagnitude: 0).cgPath
             
             maskLayer.add(animation1, forKey: "path")
             
+            curveRenderer.redraw(for: &maskLayer)
+            
         }
-        
-        
-
     }
 }

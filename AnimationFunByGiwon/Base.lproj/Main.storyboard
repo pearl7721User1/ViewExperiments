@@ -23,7 +23,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2483" y="60"/>
+            <point key="canvasLocation" x="2552" y="155"/>
+        </scene>
+        <!--Analogous Color Scheme View Controller-->
+        <scene sceneID="nHk-WI-JF6">
+            <objects>
+                <viewController id="NFD-wu-yBU" customClass="AnalogousColorSchemeViewController" customModule="AnimationFunByGiwon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J36-dh-pga">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zHA-Z4-31Q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7f-Vh-2i7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="-435"/>
         </scene>
         <!--Giwon Button Testing View Controller-->
         <scene sceneID="izQ-2s-0PD">
@@ -48,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sE-NS-gLl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989.85507246376824" y="43.526785714285715"/>
+            <point key="canvasLocation" x="1122" y="141"/>
         </scene>
         <!--Rubber Band Effect Testing View Controller-->
         <scene sceneID="a4H-7O-ScF">
@@ -187,6 +202,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Uvk-iG-QcV" kind="show" id="j9q-bD-nnc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="glg-ki-aYw" style="IBUITableViewCellStyleDefault" id="e7m-GC-oCk">
+                                        <rect key="frame" x="0.0" y="132" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e7m-GC-oCk" id="3wv-Qt-b4w">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Analogous Color Scheme Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="glg-ki-aYw">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="NFD-wu-yBU" kind="show" id="DkF-GB-QBV"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
