@@ -14,6 +14,7 @@ class CurvedMaskRendererForTesting: NSObject {
         case left, right, top, bottom
     }
     
+    
     func redraw(for shapeLayer: inout CAShapeLayer, curveDirection: CurveDirection, curveControlValue: CGFloat) {
         
         shapeLayer.path = curvePathAtTop(frame: shapeLayer.bounds, at: curveControlValue).cgPath
@@ -65,4 +66,5 @@ class CurvedMaskRendererForTesting: NSObject {
         
         return curvePath
     }
+    
 }

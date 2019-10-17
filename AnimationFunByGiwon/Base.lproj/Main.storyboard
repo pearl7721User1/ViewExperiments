@@ -25,6 +25,35 @@
             </objects>
             <point key="canvasLocation" x="2552" y="155"/>
         </scene>
+        <!--Title-->
+        <scene sceneID="1ke-bl-oAl">
+            <objects>
+                <viewController id="WsD-CG-7QY" customClass="PathAnimationTestingViewController" customModule="AnimationFunByGiwon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBS-if-znm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q1f-1N-ekU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="O0d-7j-ykJ">
+                        <rightBarButtonItems>
+                            <barButtonItem title="button1" id="7O6-wi-2xh">
+                                <connections>
+                                    <action selector="itemButtonTapped:" destination="WsD-CG-7QY" id="N8l-tY-dQ2"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="button2" id="Rp0-Vs-GFI">
+                                <connections>
+                                    <action selector="button2Tapped:" destination="WsD-CG-7QY" id="LSw-to-a43"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaN-md-NWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="-541"/>
+        </scene>
         <!--Analogous Color Scheme View Controller-->
         <scene sceneID="nHk-WI-JF6">
             <objects>
@@ -224,6 +253,26 @@
                                             <segue destination="NFD-wu-yBU" kind="show" id="DkF-GB-QBV"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="iWv-5j-GAE" style="IBUITableViewCellStyleDefault" id="jj3-ss-fHV">
+                                        <rect key="frame" x="0.0" y="176" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jj3-ss-fHV" id="k4E-Fs-RLK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Path Spring Animations Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iWv-5j-GAE">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WsD-CG-7QY" kind="show" id="RVr-jD-zib"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -236,7 +285,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2O-q7-S9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231.8840579710145" y="89.732142857142847"/>
+            <point key="canvasLocation" x="83" y="97"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mPf-Tx-Uyk">

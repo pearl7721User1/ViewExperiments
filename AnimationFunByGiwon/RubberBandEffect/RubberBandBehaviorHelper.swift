@@ -10,9 +10,8 @@ import UIKit
 
 protocol RubberBandBehaviorHelperDelegate {
     func constantUpdated(to: CGFloat, curveMagnitude:CGFloat, curveControl:CGFloat, sender: Any)
-    func bounceBack(to constant:CGFloat, sender: Any)
+    func snapBack(from fromConstant:CGFloat, to toConstant:CGFloat, sender: Any)
 }
-
 
 class RubberBandBehaviorHelper: NSObject {
     
@@ -36,6 +35,7 @@ class RubberBandBehaviorHelper: NSObject {
             return 0.5
         }
         
+        let rubberBandYTranslation = pulledViewHeight + rubberConstant * log10(-yTranslation/rubberConstant + 1)
         
         switch sender.state {
         case .began, .changed:
@@ -44,14 +44,12 @@ class RubberBandBehaviorHelper: NSObject {
                 return
             }
             
-            let rubberBandYTranslation = pulledViewHeight + rubberConstant * log10(-yTranslation/rubberConstant + 1)
-            
             delegate?.constantUpdated(to: rubberBandYTranslation, curveMagnitude: rubberBandYTranslation - pulledViewHeight, curveControl: normalizedXLocation, sender: self)
             
             
         default:
             
-            delegate?.bounceBack(to: pulledViewHeight, sender: self)
+            delegate?.snapBack(from: rubberBandYTranslation, to: pulledViewHeight, sender: self)
             
             break
         }

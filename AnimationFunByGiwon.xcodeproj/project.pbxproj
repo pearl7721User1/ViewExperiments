@@ -9,35 +9,55 @@
 /* Begin PBXBuildFile section */
 		EE30C55F231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE30C55E231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift */; };
 		EE30C588231E34B600B2CE02 /* GiwonColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE30C587231E34B600B2CE02 /* GiwonColorPalette.swift */; };
+		EE3B07552355FB1A00F55794 /* AnimationFunByGiwonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3B07542355FB1A00F55794 /* AnimationFunByGiwonTests.swift */; };
 		EE433FA82316C95100BA2336 /* GHeadTailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FA72316C95100BA2336 /* GHeadTailButton.swift */; };
 		EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */; };
 		EE433FAD2316CAC800BA2336 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAB2316CAC800BA2336 /* pause.png */; };
 		EE433FAE2316CAC800BA2336 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAC2316CAC800BA2336 /* play.png */; };
 		EE433FB32318F6A500BA2336 /* PullSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB22318F6A500BA2336 /* PullSubjectViewController.swift */; };
 		EE433FB52319195900BA2336 /* CurveShapeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB42319195900BA2336 /* CurveShapeController.swift */; };
-		EE433FB7231959C900BA2336 /* CurvedMaskRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB6231959C900BA2336 /* CurvedMaskRenderer.swift */; };
+		EE433FB7231959C900BA2336 /* CurvePathProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB6231959C900BA2336 /* CurvePathProvider.swift */; };
 		EE4E8F1B2314050B00D95688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E8F1A2314050B00D95688 /* AppDelegate.swift */; };
 		EE4E8F1D2314050B00D95688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E8F1C2314050B00D95688 /* ViewController.swift */; };
 		EE4E8F202314050B00D95688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4E8F1E2314050B00D95688 /* Main.storyboard */; };
 		EE4E8F222314050D00D95688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4E8F212314050D00D95688 /* Assets.xcassets */; };
 		EE4E8F252314050D00D95688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4E8F232314050D00D95688 /* LaunchScreen.storyboard */; };
 		EE4E8F2D2314062500D95688 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E8F2C2314062400D95688 /* TargetView.swift */; };
+		EE55B0D1234F0AD70061AF00 /* CurveControlValueGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE55B0D0234F0AD70061AF00 /* CurveControlValueGenerator.swift */; };
+		EE5664F12358150C00ACA91A /* CurveOrientationDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5664F02358150C00ACA91A /* CurveOrientationDetector.swift */; };
+		EE5664F32358151900ACA91A /* CurveParameterReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5664F22358151900ACA91A /* CurveParameterReader.swift */; };
+		EE5A8CA12352FE7B0099BACC /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A8C9F2352FE7A0099BACC /* CGPointExtension.swift */; };
+		EE5A8CA22352FE7B0099BACC /* GiwonVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A8CA02352FE7B0099BACC /* GiwonVector.swift */; };
+		EE6C70FF234ED45800F11757 /* PathAnimationTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C70FE234ED45800F11757 /* PathAnimationTestingViewController.swift */; };
 		EE6E5DDA2315233C0049A58D /* CurvedMaskRendererForTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DD92315233C0049A58D /* CurvedMaskRendererForTesting.swift */; };
 		EE6E5DDE23163D550049A58D /* RubberBandEffectTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */; };
 		EE6E5DE023163E260049A58D /* PullHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DDF23163E260049A58D /* PullHandleView.swift */; };
 		EE6E5DE22316435D0049A58D /* RubberBandBehaviorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE3B07572355FB1A00F55794 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE4E8F0F2314050A00D95688 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4E8F162314050A00D95688;
+			remoteInfo = AnimationFunByGiwon;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		EE30C55E231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogousColorSchemeViewController.swift; sourceTree = "<group>"; };
 		EE30C587231E34B600B2CE02 /* GiwonColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiwonColorPalette.swift; sourceTree = "<group>"; };
+		EE3B07522355FB1A00F55794 /* AnimationFunByGiwonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationFunByGiwonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3B07542355FB1A00F55794 /* AnimationFunByGiwonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFunByGiwonTests.swift; sourceTree = "<group>"; };
+		EE3B07562355FB1A00F55794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE433FA72316C95100BA2336 /* GHeadTailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHeadTailButton.swift; sourceTree = "<group>"; };
 		EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiwonButtonTestingViewController.swift; sourceTree = "<group>"; };
 		EE433FAB2316CAC800BA2336 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		EE433FAC2316CAC800BA2336 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		EE433FB22318F6A500BA2336 /* PullSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullSubjectViewController.swift; sourceTree = "<group>"; };
 		EE433FB42319195900BA2336 /* CurveShapeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveShapeController.swift; sourceTree = "<group>"; };
-		EE433FB6231959C900BA2336 /* CurvedMaskRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedMaskRenderer.swift; sourceTree = "<group>"; };
+		EE433FB6231959C900BA2336 /* CurvePathProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvePathProvider.swift; sourceTree = "<group>"; };
 		EE4E8F172314050A00D95688 /* AnimationFunByGiwon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationFunByGiwon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4E8F1A2314050B00D95688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE4E8F1C2314050B00D95688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +66,12 @@
 		EE4E8F242314050D00D95688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE4E8F262314050D00D95688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE4E8F2C2314062400D95688 /* TargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
+		EE55B0D0234F0AD70061AF00 /* CurveControlValueGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveControlValueGenerator.swift; sourceTree = "<group>"; };
+		EE5664F02358150C00ACA91A /* CurveOrientationDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveOrientationDetector.swift; sourceTree = "<group>"; };
+		EE5664F22358151900ACA91A /* CurveParameterReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveParameterReader.swift; sourceTree = "<group>"; };
+		EE5A8C9F2352FE7A0099BACC /* CGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
+		EE5A8CA02352FE7B0099BACC /* GiwonVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiwonVector.swift; sourceTree = "<group>"; };
+		EE6C70FE234ED45800F11757 /* PathAnimationTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAnimationTestingViewController.swift; sourceTree = "<group>"; };
 		EE6E5DD92315233C0049A58D /* CurvedMaskRendererForTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedMaskRendererForTesting.swift; sourceTree = "<group>"; };
 		EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubberBandEffectTestingViewController.swift; sourceTree = "<group>"; };
 		EE6E5DDF23163E260049A58D /* PullHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullHandleView.swift; sourceTree = "<group>"; };
@@ -53,6 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EE3B074F2355FB1A00F55794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EE4E8F142314050A00D95688 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +103,15 @@
 				EE30C587231E34B600B2CE02 /* GiwonColorPalette.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		EE3B07532355FB1A00F55794 /* AnimationFunByGiwonTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE3B07542355FB1A00F55794 /* AnimationFunByGiwonTests.swift */,
+				EE3B07562355FB1A00F55794 /* Info.plist */,
+			);
+			path = AnimationFunByGiwonTests;
 			sourceTree = "<group>";
 		};
 		EE433FA62316C8D600BA2336 /* GiwonButtonTesting */ = {
@@ -95,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				EE4E8F192314050B00D95688 /* AnimationFunByGiwon */,
+				EE3B07532355FB1A00F55794 /* AnimationFunByGiwonTests */,
 				EE4E8F182314050A00D95688 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				EE4E8F172314050A00D95688 /* AnimationFunByGiwon.app */,
+				EE3B07522355FB1A00F55794 /* AnimationFunByGiwonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,10 +154,11 @@
 		EE4E8F192314050B00D95688 /* AnimationFunByGiwon */ = {
 			isa = PBXGroup;
 			children = (
+				EE6C70FD234ED43E00F11757 /* PathAnimationTesting */,
 				EE30C55D231CBC6000B2CE02 /* New Group */,
-				EE433FA62316C8D600BA2336 /* GiwonButtonTesting */,
 				EE6E5DDB23163BAC0049A58D /* CurvedShapeTesting */,
 				EE6E5DDC23163BC40049A58D /* RubberBandEffect */,
+				EE433FA62316C8D600BA2336 /* GiwonButtonTesting */,
 				EE4E8F1A2314050B00D95688 /* AppDelegate.swift */,
 				EE4E8F1E2314050B00D95688 /* Main.storyboard */,
 				EE4E8F212314050D00D95688 /* Assets.xcassets */,
@@ -121,6 +166,34 @@
 				EE4E8F262314050D00D95688 /* Info.plist */,
 			);
 			path = AnimationFunByGiwon;
+			sourceTree = "<group>";
+		};
+		EE55B0CF234F09280061AF00 /* CurvePathGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				EE55B0D0234F0AD70061AF00 /* CurveControlValueGenerator.swift */,
+				EE5A8CA02352FE7B0099BACC /* GiwonVector.swift */,
+				EE5A8C9F2352FE7A0099BACC /* CGPointExtension.swift */,
+			);
+			name = CurvePathGenerator;
+			path = ../CurvePathGenerator;
+			sourceTree = "<group>";
+		};
+		EE5664EF235814E800ACA91A /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE5664F02358150C00ACA91A /* CurveOrientationDetector.swift */,
+				EE5664F22358151900ACA91A /* CurveParameterReader.swift */,
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		EE6C70FD234ED43E00F11757 /* PathAnimationTesting */ = {
+			isa = PBXGroup;
+			children = (
+				EE6C70FE234ED45800F11757 /* PathAnimationTestingViewController.swift */,
+			);
+			path = PathAnimationTesting;
 			sourceTree = "<group>";
 		};
 		EE6E5DDB23163BAC0049A58D /* CurvedShapeTesting */ = {
@@ -136,11 +209,13 @@
 		EE6E5DDC23163BC40049A58D /* RubberBandEffect */ = {
 			isa = PBXGroup;
 			children = (
+				EE5664EF235814E800ACA91A /* New Group1 */,
+				EE55B0CF234F09280061AF00 /* CurvePathGenerator */,
 				EE433FB12318F67F00BA2336 /* New Group */,
 				EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */,
 				EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */,
 				EE6E5DDF23163E260049A58D /* PullHandleView.swift */,
-				EE433FB6231959C900BA2336 /* CurvedMaskRenderer.swift */,
+				EE433FB6231959C900BA2336 /* CurvePathProvider.swift */,
 				EE433FB42319195900BA2336 /* CurveShapeController.swift */,
 			);
 			path = RubberBandEffect;
@@ -149,6 +224,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EE3B07512355FB1A00F55794 /* AnimationFunByGiwonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3B075B2355FB1A00F55794 /* Build configuration list for PBXNativeTarget "AnimationFunByGiwonTests" */;
+			buildPhases = (
+				EE3B074E2355FB1A00F55794 /* Sources */,
+				EE3B074F2355FB1A00F55794 /* Frameworks */,
+				EE3B07502355FB1A00F55794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE3B07582355FB1A00F55794 /* PBXTargetDependency */,
+			);
+			name = AnimationFunByGiwonTests;
+			productName = AnimationFunByGiwonTests;
+			productReference = EE3B07522355FB1A00F55794 /* AnimationFunByGiwonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EE4E8F162314050A00D95688 /* AnimationFunByGiwon */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE4E8F292314050D00D95688 /* Build configuration list for PBXNativeTarget "AnimationFunByGiwon" */;
@@ -176,6 +269,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = SeoGiwon;
 				TargetAttributes = {
+					EE3B07512355FB1A00F55794 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EE4E8F162314050A00D95688;
+					};
 					EE4E8F162314050A00D95688 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -195,11 +292,19 @@
 			projectRoot = "";
 			targets = (
 				EE4E8F162314050A00D95688 /* AnimationFunByGiwon */,
+				EE3B07512355FB1A00F55794 /* AnimationFunByGiwonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EE3B07502355FB1A00F55794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EE4E8F152314050A00D95688 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,20 +320,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EE3B074E2355FB1A00F55794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3B07552355FB1A00F55794 /* AnimationFunByGiwonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EE4E8F132314050A00D95688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5664F12358150C00ACA91A /* CurveOrientationDetector.swift in Sources */,
 				EE433FB52319195900BA2336 /* CurveShapeController.swift in Sources */,
+				EE6C70FF234ED45800F11757 /* PathAnimationTestingViewController.swift in Sources */,
 				EE6E5DE22316435D0049A58D /* RubberBandBehaviorHelper.swift in Sources */,
 				EE30C588231E34B600B2CE02 /* GiwonColorPalette.swift in Sources */,
 				EE4E8F1D2314050B00D95688 /* ViewController.swift in Sources */,
 				EE30C55F231CBCA600B2CE02 /* AnalogousColorSchemeViewController.swift in Sources */,
-				EE433FB7231959C900BA2336 /* CurvedMaskRenderer.swift in Sources */,
+				EE433FB7231959C900BA2336 /* CurvePathProvider.swift in Sources */,
 				EE4E8F2D2314062500D95688 /* TargetView.swift in Sources */,
+				EE55B0D1234F0AD70061AF00 /* CurveControlValueGenerator.swift in Sources */,
 				EE433FB32318F6A500BA2336 /* PullSubjectViewController.swift in Sources */,
+				EE5A8CA12352FE7B0099BACC /* CGPointExtension.swift in Sources */,
 				EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */,
 				EE6E5DDE23163D550049A58D /* RubberBandEffectTestingViewController.swift in Sources */,
+				EE5664F32358151900ACA91A /* CurveParameterReader.swift in Sources */,
+				EE5A8CA22352FE7B0099BACC /* GiwonVector.swift in Sources */,
 				EE6E5DE023163E260049A58D /* PullHandleView.swift in Sources */,
 				EE4E8F1B2314050B00D95688 /* AppDelegate.swift in Sources */,
 				EE6E5DDA2315233C0049A58D /* CurvedMaskRendererForTesting.swift in Sources */,
@@ -237,6 +356,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE3B07582355FB1A00F55794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE4E8F162314050A00D95688 /* AnimationFunByGiwon */;
+			targetProxy = EE3B07572355FB1A00F55794 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EE4E8F1E2314050B00D95688 /* Main.storyboard */ = {
@@ -258,6 +385,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EE3B07592355FB1A00F55794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LSJUN2G6D;
+				INFOPLIST_FILE = AnimationFunByGiwonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = softv.AnimationFunByGiwonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimationFunByGiwon.app/AnimationFunByGiwon";
+			};
+			name = Debug;
+		};
+		EE3B075A2355FB1A00F55794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LSJUN2G6D;
+				INFOPLIST_FILE = AnimationFunByGiwonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = softv.AnimationFunByGiwonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimationFunByGiwon.app/AnimationFunByGiwon";
+			};
+			name = Release;
+		};
 		EE4E8F272314050D00D95688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,6 +580,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EE3B075B2355FB1A00F55794 /* Build configuration list for PBXNativeTarget "AnimationFunByGiwonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3B07592355FB1A00F55794 /* Debug */,
+				EE3B075A2355FB1A00F55794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EE4E8F122314050A00D95688 /* Build configuration list for PBXProject "AnimationFunByGiwon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let myView = TargetView()
-    var pointGenerator = ControlPointGenerator()
+    var pointGenerator = MyControlPointGenerator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
 }
 
-class ControlPointGenerator {
+class MyControlPointGenerator {
     
     private var isIncrementing = true
     private var currentControlValue: CGFloat = 0.5
