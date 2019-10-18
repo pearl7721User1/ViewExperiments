@@ -17,6 +17,7 @@ class PullHandleView: UIView {
     }
     private let originalHeightValue: CGFloat = 80
     private var rubberBandHelper: RubberBandBehaviorHelper
+    
     private lazy var curveShapeController: CurveShapeController = {
         let curveShapeController = CurveShapeController(targetConstraint: heightConstraint, targetView: self)
         rubberBandHelper.delegate = curveShapeController

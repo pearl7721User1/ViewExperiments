@@ -10,7 +10,7 @@ import UIKit
 
 struct CurveParameterReader {
     
-    let rubberConstant: CGFloat = 100
+    let rubberConstant: CGFloat = 1000000
     
     func curveParameters(frame:CGRect, to point:CGPoint, with orientation:CurveOrientation) -> (curveSize:CGFloat, curveValue:CGFloat) {
         
@@ -51,7 +51,7 @@ struct CurveParameterReader {
             
             // log?
             curveSize = rubberConstant * log10(curveSizeMightBe/rubberConstant + 1)
-            
+//            curveSize = log2(curveSizeMightBe + 1)
             
             // linear?
             // curveSize = curveSizeMightBe
@@ -88,9 +88,9 @@ struct CurveParameterReader {
         var curveControlValue: CGFloat = 0.5
         
         if pointValue < frameMin {
-            curveControlValue = 1
-        } else if pointValue > frameMax {
             curveControlValue = 0
+        } else if pointValue > frameMax {
+            curveControlValue = 1
         } else {
             let d = frameMax - frameMin
             curveControlValue = param / d

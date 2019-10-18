@@ -10,27 +10,15 @@ import UIKit
 
 class RubberBandEffectTestingViewController: UIViewController {
 
-    var pullSubjectViewController: PullSubjectViewController
-    
-    required init?(coder aDecoder: NSCoder) {
-        pullSubjectViewController = PullSubjectViewController.newInstance()
-        super.init(coder: aDecoder)
-    }
+    @IBOutlet weak var targetView: UIView!
+    private var curveShapeController: CurveShapeController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        self.addChild(pullSubjectViewController)
-        self.view.addSubview(pullSubjectViewController.view)
         
+        curveShapeController = CurveShapeController(targetView: targetView)
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        var rect = self.view.bounds
-        rect.origin = CGPoint(x:0, y:self.view.bounds.maxY - 80)
-        pullSubjectViewController.view.frame = rect
-    }
+
 }

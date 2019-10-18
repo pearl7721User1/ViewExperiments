@@ -14,7 +14,6 @@
 		EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */; };
 		EE433FAD2316CAC800BA2336 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAB2316CAC800BA2336 /* pause.png */; };
 		EE433FAE2316CAC800BA2336 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = EE433FAC2316CAC800BA2336 /* play.png */; };
-		EE433FB32318F6A500BA2336 /* PullSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB22318F6A500BA2336 /* PullSubjectViewController.swift */; };
 		EE433FB52319195900BA2336 /* CurveShapeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB42319195900BA2336 /* CurveShapeController.swift */; };
 		EE433FB7231959C900BA2336 /* CurvePathProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE433FB6231959C900BA2336 /* CurvePathProvider.swift */; };
 		EE4E8F1B2314050B00D95688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E8F1A2314050B00D95688 /* AppDelegate.swift */; };
@@ -31,7 +30,6 @@
 		EE6C70FF234ED45800F11757 /* PathAnimationTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C70FE234ED45800F11757 /* PathAnimationTestingViewController.swift */; };
 		EE6E5DDA2315233C0049A58D /* CurvedMaskRendererForTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DD92315233C0049A58D /* CurvedMaskRendererForTesting.swift */; };
 		EE6E5DDE23163D550049A58D /* RubberBandEffectTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */; };
-		EE6E5DE023163E260049A58D /* PullHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DDF23163E260049A58D /* PullHandleView.swift */; };
 		EE6E5DE22316435D0049A58D /* RubberBandBehaviorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +53,8 @@
 		EE433FA92316C9B400BA2336 /* GiwonButtonTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiwonButtonTestingViewController.swift; sourceTree = "<group>"; };
 		EE433FAB2316CAC800BA2336 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		EE433FAC2316CAC800BA2336 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		EE433FB22318F6A500BA2336 /* PullSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullSubjectViewController.swift; sourceTree = "<group>"; };
 		EE433FB42319195900BA2336 /* CurveShapeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveShapeController.swift; sourceTree = "<group>"; };
-		EE433FB6231959C900BA2336 /* CurvePathProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvePathProvider.swift; sourceTree = "<group>"; };
+		EE433FB6231959C900BA2336 /* CurvePathProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurvePathProvider.swift; path = ../CurvePathProvider.swift; sourceTree = "<group>"; };
 		EE4E8F172314050A00D95688 /* AnimationFunByGiwon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationFunByGiwon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4E8F1A2314050B00D95688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE4E8F1C2314050B00D95688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -66,16 +63,16 @@
 		EE4E8F242314050D00D95688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE4E8F262314050D00D95688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE4E8F2C2314062400D95688 /* TargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
-		EE55B0D0234F0AD70061AF00 /* CurveControlValueGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveControlValueGenerator.swift; sourceTree = "<group>"; };
+		EE55B0D0234F0AD70061AF00 /* CurveControlValueGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurveControlValueGenerator.swift; path = ../../CurvePathGenerator/CurveControlValueGenerator.swift; sourceTree = "<group>"; };
 		EE5664F02358150C00ACA91A /* CurveOrientationDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveOrientationDetector.swift; sourceTree = "<group>"; };
 		EE5664F22358151900ACA91A /* CurveParameterReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveParameterReader.swift; sourceTree = "<group>"; };
-		EE5A8C9F2352FE7A0099BACC /* CGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
-		EE5A8CA02352FE7B0099BACC /* GiwonVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiwonVector.swift; sourceTree = "<group>"; };
+		EE5A8C9F2352FE7A0099BACC /* CGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGPointExtension.swift; path = ../../CurvePathGenerator/CGPointExtension.swift; sourceTree = "<group>"; };
+		EE5A8CA02352FE7B0099BACC /* GiwonVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GiwonVector.swift; path = ../../CurvePathGenerator/GiwonVector.swift; sourceTree = "<group>"; };
 		EE6C70FE234ED45800F11757 /* PathAnimationTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAnimationTestingViewController.swift; sourceTree = "<group>"; };
 		EE6E5DD92315233C0049A58D /* CurvedMaskRendererForTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedMaskRendererForTesting.swift; sourceTree = "<group>"; };
 		EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubberBandEffectTestingViewController.swift; sourceTree = "<group>"; };
-		EE6E5DDF23163E260049A58D /* PullHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullHandleView.swift; sourceTree = "<group>"; };
-		EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubberBandBehaviorHelper.swift; sourceTree = "<group>"; };
+		EE6E5DDF23163E260049A58D /* PullHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PullHandleView.swift; path = ../PullHandleView.swift; sourceTree = "<group>"; };
+		EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RubberBandBehaviorHelper.swift; path = ../RubberBandBehaviorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,14 +122,6 @@
 			path = GiwonButtonTesting;
 			sourceTree = "<group>";
 		};
-		EE433FB12318F67F00BA2336 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				EE433FB22318F6A500BA2336 /* PullSubjectViewController.swift */,
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		EE4E8F0E2314050A00D95688 = {
 			isa = PBXGroup;
 			children = (
@@ -154,10 +143,10 @@
 		EE4E8F192314050B00D95688 /* AnimationFunByGiwon */ = {
 			isa = PBXGroup;
 			children = (
+				EE6E5DDC23163BC40049A58D /* RubberBandEffect */,
+				EE6E5DDB23163BAC0049A58D /* CurvedShapeTesting */,
 				EE6C70FD234ED43E00F11757 /* PathAnimationTesting */,
 				EE30C55D231CBC6000B2CE02 /* New Group */,
-				EE6E5DDB23163BAC0049A58D /* CurvedShapeTesting */,
-				EE6E5DDC23163BC40049A58D /* RubberBandEffect */,
 				EE433FA62316C8D600BA2336 /* GiwonButtonTesting */,
 				EE4E8F1A2314050B00D95688 /* AppDelegate.swift */,
 				EE4E8F1E2314050B00D95688 /* Main.storyboard */,
@@ -168,24 +157,17 @@
 			path = AnimationFunByGiwon;
 			sourceTree = "<group>";
 		};
-		EE55B0CF234F09280061AF00 /* CurvePathGenerator */ = {
-			isa = PBXGroup;
-			children = (
-				EE55B0D0234F0AD70061AF00 /* CurveControlValueGenerator.swift */,
-				EE5A8CA02352FE7B0099BACC /* GiwonVector.swift */,
-				EE5A8C9F2352FE7A0099BACC /* CGPointExtension.swift */,
-			);
-			name = CurvePathGenerator;
-			path = ../CurvePathGenerator;
-			sourceTree = "<group>";
-		};
-		EE5664EF235814E800ACA91A /* New Group1 */ = {
+		EE5664EF235814E800ACA91A /* CurveDrawingHelper */ = {
 			isa = PBXGroup;
 			children = (
 				EE5664F02358150C00ACA91A /* CurveOrientationDetector.swift */,
 				EE5664F22358151900ACA91A /* CurveParameterReader.swift */,
+				EE55B0D0234F0AD70061AF00 /* CurveControlValueGenerator.swift */,
+				EE5A8CA02352FE7B0099BACC /* GiwonVector.swift */,
+				EE5A8C9F2352FE7A0099BACC /* CGPointExtension.swift */,
+				EE433FB6231959C900BA2336 /* CurvePathProvider.swift */,
 			);
-			path = "New Group1";
+			path = CurveDrawingHelper;
 			sourceTree = "<group>";
 		};
 		EE6C70FD234ED43E00F11757 /* PathAnimationTesting */ = {
@@ -209,16 +191,21 @@
 		EE6E5DDC23163BC40049A58D /* RubberBandEffect */ = {
 			isa = PBXGroup;
 			children = (
-				EE5664EF235814E800ACA91A /* New Group1 */,
-				EE55B0CF234F09280061AF00 /* CurvePathGenerator */,
-				EE433FB12318F67F00BA2336 /* New Group */,
 				EE6E5DDD23163D550049A58D /* RubberBandEffectTestingViewController.swift */,
-				EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */,
-				EE6E5DDF23163E260049A58D /* PullHandleView.swift */,
-				EE433FB6231959C900BA2336 /* CurvePathProvider.swift */,
 				EE433FB42319195900BA2336 /* CurveShapeController.swift */,
+				EE5664EF235814E800ACA91A /* CurveDrawingHelper */,
+				EED7D57E2359D118005AB078 /* DoNotUseThese */,
 			);
 			path = RubberBandEffect;
+			sourceTree = "<group>";
+		};
+		EED7D57E2359D118005AB078 /* DoNotUseThese */ = {
+			isa = PBXGroup;
+			children = (
+				EE6E5DDF23163E260049A58D /* PullHandleView.swift */,
+				EE6E5DE12316435D0049A58D /* RubberBandBehaviorHelper.swift */,
+			);
+			path = DoNotUseThese;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,13 +329,11 @@
 				EE433FB7231959C900BA2336 /* CurvePathProvider.swift in Sources */,
 				EE4E8F2D2314062500D95688 /* TargetView.swift in Sources */,
 				EE55B0D1234F0AD70061AF00 /* CurveControlValueGenerator.swift in Sources */,
-				EE433FB32318F6A500BA2336 /* PullSubjectViewController.swift in Sources */,
 				EE5A8CA12352FE7B0099BACC /* CGPointExtension.swift in Sources */,
 				EE433FAA2316C9B400BA2336 /* GiwonButtonTestingViewController.swift in Sources */,
 				EE6E5DDE23163D550049A58D /* RubberBandEffectTestingViewController.swift in Sources */,
 				EE5664F32358151900ACA91A /* CurveParameterReader.swift in Sources */,
 				EE5A8CA22352FE7B0099BACC /* GiwonVector.swift in Sources */,
-				EE6E5DE023163E260049A58D /* PullHandleView.swift in Sources */,
 				EE4E8F1B2314050B00D95688 /* AppDelegate.swift in Sources */,
 				EE6E5DDA2315233C0049A58D /* CurvedMaskRendererForTesting.swift in Sources */,
 				EE433FA82316C95100BA2336 /* GHeadTailButton.swift in Sources */,

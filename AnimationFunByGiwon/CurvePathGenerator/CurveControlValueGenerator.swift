@@ -36,7 +36,8 @@ struct CurveControlValueGenerator {
         let controlPoint5 = oppositeControlPoint(startPoint: startPoint, endPoint: endPoint, controlPoint: controlPoint4, curveScale: 0.5)
         controlPoints.append(controlPoint5)
         
-        let controlPoint6 = oppositeControlPoint(startPoint: startPoint, endPoint: endPoint, controlPoint: controlPoint5, curveScale: 0.2)
+        let controlPoint6 = oppositeControlPoint(startPoint: startPoint, endPoint: endPoint, controlPoint: controlPoint5, curveScale: 0)
+        
         controlPoints.append(controlPoint6)
 
         return controlPoints

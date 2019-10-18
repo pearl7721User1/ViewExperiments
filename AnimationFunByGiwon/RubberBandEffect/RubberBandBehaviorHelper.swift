@@ -13,11 +13,17 @@ protocol RubberBandBehaviorHelperDelegate {
     func snapBack(from fromConstant:CGFloat, to toConstant:CGFloat, sender: Any)
 }
 
+protocol RubberBandGestureDelegate {
+    func gestureBegan(sender:Any)
+    func curveUpdated(orientation: CurveOrientation, curveSize:CGFloat, curveControl:CGFloat, sender: Any)
+    func snapBack(sender: Any)
+}
+
 class RubberBandBehaviorHelper: NSObject {
     
     var delegate: RubberBandBehaviorHelperDelegate?
     var pulledViewHeight: CGFloat
-    private let rubberConstant: CGFloat = 100
+    private let rubberConstant: CGFloat = 100000
     
     init(originalViewHeight: CGFloat) {
         self.pulledViewHeight = originalViewHeight

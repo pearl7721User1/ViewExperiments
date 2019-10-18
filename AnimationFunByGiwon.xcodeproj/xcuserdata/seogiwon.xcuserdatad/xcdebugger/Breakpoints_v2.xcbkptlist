@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AnimationFunByGiwon/CurvePathGenerator/CurveControlValueGenerator.swift"
-            timestampString = "592839394.283879"
+            timestampString = "593089272.999835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "oppositeControlPoint(startPoint:endPoint:controlPoint:curveScale:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AnimationFunByGiwon/CurvePathGenerator/CurveControlValueGenerator.swift"
-            timestampString = "592839394.285876"
+            timestampString = "593089273.000567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "oppositeControlPoint(startPoint:endPoint:controlPoint:curveScale:)"
             landmarkType = "7">
          </BreakpointContent>
